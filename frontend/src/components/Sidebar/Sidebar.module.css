@@ -1,0 +1,74 @@
+.sidebar_container{
+    border-radius: 18px;
+    background-color: var(--white_color);
+    height: 100%;
+    padding: 2rem 0;
+    flex: 3.5;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.sidebar_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+
+}
+.sidebar_header img{
+    width: 48px;
+    border-radius: 5px;
+    background-color: var(--light_gray_color);
+
+}
+.app_name{
+    color: var(--dark_blue_color);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.sidebar_list{
+    display: flex;
+    flex-direction: column;
+    
+}
+.sidebar_list_item{
+    gap: 10px;
+    height: 65px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all .8s;
+
+}
+.sidebar_list_item:hover {
+    background-color: var(--light_gray_color);
+
+}
+.sidebar_list_item:hover .list_content p , .sidebar_list_item:hover .list_content svg {
+    color: var(--dark_blue_color);
+}
+.sidebar_list_item:hover .list_content{
+    border-right: 4px solid var(--dark_blue_color);
+}
+.list_content{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    gap: 10px;
+    justify-content: start;
+    width: 50%;
+    transition: all .1s;
+
+
+
+}
+.list_content svg{
+    font-size: 1.4rem;
+    transition: all .4s;
+}
+.list_content p{
+    letter-spacing: 0.8px;
+    transition: all .4s;
+}

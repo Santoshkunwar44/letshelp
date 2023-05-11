@@ -1,0 +1,51 @@
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+
+    font-family:  'Poppins', sans-serif, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+.section_information{
+    flex: 1;
+}
+.section_header_text{
+    cursor: pointer;
+    color: var(--dark_blue_color);
+    letter-spacing: 1px;
+}
+.section_header_info_text{
+    font-size: 12px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.searchBar{
+    background-color: var(--white_color);
+    flex: 1;
+    height: 70%;
+    display: flex;
+    padding: 0 0.8rem;
+    gap: 10px;
+    align-items: center;
+    border-radius: 10px;
+}
+.searchBar svg{
+    font-size: 1.4rem;
+}
+.searchBar input{
+    border: none;
+    outline: none;
+    height: 100%;
+    background-color: transparent;
+    color: var(--gray_color);
+    font-size: 15px;
+    font-family:  'Poppins', sans-serif, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+}
+.searchBar input::placeholder{
+    /* color: v ; */
+    font-size: 14px;
+    font-family:  'Poppins', sans-serif, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    color: var(--gray_color);
+    letter-spacing: 1px;
+}
